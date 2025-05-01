@@ -8,25 +8,66 @@
   </head>
   <body>
     <nav class="navigation">
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-      </ul>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-      </ul>
-      <ul>
-        <li><a href="#projetos">Projetos</a></li>
-      </ul>
-      <ul>
-        <li><a href="#contato">Contato</a></li>
+      <ul class="menu">
+        <li><a href="#inicio" class="text-menu">Início</a></li>
+        <li><a href="#sobre" class="text-menu">Sobre</a></li>
+        <li><a href="#projetos" class="text-menu">Projetos</a></li>
+        <li><a href="#contato" class="text-menu">Contato</a></li>
       </ul>
     </nav>
-    <main>
-      <img src="Img/Ft-perfil.jpg" alt="Gustavo Bueno da Silva" />
-      <h1>Lorem Ipsum</h1>
-      <p>Lorem Ipsum</p>
+    <main id="inicio" class="header">
+      <img src="Img/ft-perfil3.jpg" alt="Gustavo Bueno da Silva" class="perfil"/>
+      <h1>Gustavo Bueno da Silva</h1>
+      <p class="dev">Desenvolvedor Front End</p>
     </main>
+    <section id="sobre" class="sobre">
+      <h2 class="sobre-titulo">Sobre Mim</h2>
+      <div class="caixa-paragrafo">
+        <p class="paragrafo-sobre">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
+          aut officiis? Reiciendis itaque corporis tempore quidem doloremque
+          temporibus architecto porro natus quaerat. Numquam ratione id tenetur?
+          Reiciendis vitae fugit minus?
+        </p>
+      </div>
+    </section>
+    <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Meus Projetos</h2>
+      <div class="caixa-projetos">
+        <div class="card-projetos">
+          <img src="Img/Cripto-AES.png" alt="Site para Criptografia" class="img-projetos"/>
+          <h3 class="titulo-projetos">Criptografia AES</h3>
+          <p class="info-projetos">Lorem Ipsum</p>
+        </div>
+        <div class="card-projetos">
+          <img src="Img/gerador-senha.png" alt="Gerador de Senhas" class="img-projetos"/>
+          <h3 class="titulo-projetos">Criptografia AES</h3>
+          <p class="info-projetos">Lorem Ipsum</p>
+        </div>
+        <div class="card-projetos">
+          <img src="Img/NinjaDevs API.png" alt="API-FATEC" class="img-projetos"/>
+          <h3 class="titulo-projetos">Sistema web de registro de atestados</h3>
+          <p class="info-projetos">
+            sistema web para o registro e gestão de atestados médicos de alunos,
+            facilitando a comunicação entre estudantes, professores e a
+            coordenação acadêmica, além de permitir a avaliação contínua de
+            equipes ágeis em projetos de desenvolvimento de software.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <section id="sobre" class="sobre"></section>
+    <section id="contato" class="contatos">
+      <h2 class="titulo-contato">Contato</h2>
+      <form class="contact" id="formulario">
+        <div class="name-form">
+          <input placeholder="Nome" class="campo-form"/>
+        </div>
+        <div class="group-form">
+          <textarea class="text-form" placeholder="Digite sua Mensagem"></textarea>
+        </div>
+      </form>
+    </section>
+
   </body>
 </html>
