@@ -122,21 +122,20 @@ h1 {
 }
 
 .projetos {
-    padding: 92px 32px;
+    padding: 6rem 2rem;
 }
 
 .projetos-titulo {
     text-align: center;
     font-size: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
-
 
 .caixa-projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 70px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -155,16 +154,24 @@ h1 {
     overflow: hidden;
 }
 
+.titulo-projetos {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
 .img-projetos {
     height: 200px;
     width: 100%;
     object-fit: cover;
 }
 
-.titulo-projetos {
-
+.info-projetos {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem;
+    margin: 0 10px;
 }
 
-.info-projetos {
-
+.text-projects {
+    padding: 1.5rem;
 }
