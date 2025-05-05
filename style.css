@@ -125,7 +125,39 @@ h1 {
     font-size: 48px;
     color: var(--claro);
     text-align: center;
-    
+}
+
+.container-habilidades {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.habilidade-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.habilidade-item:hover {
+    transform: scale(1.1);
+}
+
+.icone-habilidade {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px rgba(124, 58, 237, 0.3));
+}
+
+.habilidade-item p {
+    color: var(--claro);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
 
