@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gustavo Bueno da Silva</title>
   </head>
   <body>
+    <div class="particulas"></div>
+
     <nav class="navigation">
       <ul class="menu">
         <li><a href="#inicio" class="text-menu">Início</a></li>
@@ -63,7 +68,7 @@
           <p>Git</p>
         </div>
       </div>
-    </section>    
+    </section>
 
     <section id="projetos" class="projetos">
       <h2 class="projetos-titulo">Meus Projetos</h2>
@@ -111,22 +116,37 @@
 
     <section id="contato" class="contatos">
       <h2 class="titulo-contato">Entre em Contato</h2>
-      <form class="contact" id="formulario">
+      <form class="contact" id="formulario" onsubmit="enviarWhatsapp(event)">
         <div class="group-form">
-          <input placeholder="Nome" class="campo-form" />
+          <input placeholder="Nome" class="campo-form" id="nome" required />
         </div>
         <div class="group-form">
           <textarea
             class="campo-form"
             placeholder="Digite sua Mensagem"
+            rows="5"
+            id="mensagem"
+            required
           ></textarea>
         </div>
+        <button type="submit" class="botao-form">Enviar Mensagem</button>
       </form>
-
-      <button type="submit" class="botao-form"></button>
     </section>
-o
 
+    <script>
+      function enviarWhatsapp(event) {
+        event.preventDefault();
+
+        const nome = document.getElementById("nome").value;
+        const mensagem = document.getElementById("mensagem").value;
+        const telefone = "5512981680076";
+
+        const texto = `Olá, meu nome é ${nome}, ${mensagem}`;
+        const msgFormatada = encodeURIComponent(texto);
+
+        const Url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgFormatada}`;
+        window.open(Url, "_blank");
+      }
+    </script>
   </body>
 </html>
- 
