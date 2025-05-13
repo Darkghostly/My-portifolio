@@ -9,6 +9,10 @@
   --vidro: rgba(255, 255, 255, 0.1);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   padding: 40px 20px;
@@ -74,7 +78,7 @@ body {
 .curriculo-container h1 {
   font-size: 36px;
   margin-bottom: 15px;
-  color: #7c3aed;
+  color: var(--secundaria);
 }
 
 .curriculo-container p {
@@ -92,8 +96,8 @@ body {
 
 .botao-download {
   display: inline-block;
-  background-color: #4f46e5;
-  color: white;
+  background-color: var(--primaria);
+  color: var(--claro);
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
@@ -102,5 +106,5 @@ body {
 }
 
 .botao-download:hover {
-  background-color: #3730a3;
+  background-color: var(--secundaria);
 }

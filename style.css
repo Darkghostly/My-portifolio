@@ -333,7 +333,7 @@ h1 {
 .footer {
     padding: 0.5rem 0;
     text-align: center;
-    background-color: var(--escuro);
+    background-color: var(--vidro);
     color: var(--claro);
     font-size: 12px;
 }  
@@ -349,13 +349,13 @@ h1 {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #4a00e0;
-    color: white;
+    background-color: var(--primaria);
+    color: var(--claro);
     text-decoration: none;
     border-radius: 6px;
     transition: background-color 0.3s;
 }
 
 .botao:hover {
-    background-color: #8e2de2;
+    background-color: var(--secundaria);
 }
