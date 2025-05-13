@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Currículo - Gustavo Bueno</title>
-  <link rel="stylesheet" href="curriculo.css">
-</head>
-<body>
-  <div class="curriculo-container">
-    <h1>Meu Currículo</h1>
-    <p>Veja abaixo meu currículo e, se desejar, baixe o PDF:</p>
-    
-    <embed src="Portfólio ADS.pdf" type="application/pdf" class="curriculo-pdf">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Currículo - Gustavo Bueno</title>
+    <link rel="stylesheet" href="/static/curriculo.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul class="menu">
+        <li><a href="index.html" class="text-menu">Voltar para Início</a></li>
+      </ul>
+    </nav>
 
-    <a href="Portfólio ADS.pdf" download class="botao-download">📥 Baixar Currículo</a>
-  </div>
-</body>
+    <div class="curriculo-container">
+      <h1>Meu Currículo</h1>
+      <p>Veja abaixo meu currículo e, se desejar, baixe o PDF:</p>
+
+      <embed
+        src="/static/Curriculo_Gustavo.pdf"
+        type="application/pdf"
+        class="curriculo-pdf"
+      />
+
+      <a href="/static/Curriculo_Gustavo.pdf" download class="botao-download"
+        >📥 Baixar Currículo</a
+      >
+    </div>
+  </body>
 </html>

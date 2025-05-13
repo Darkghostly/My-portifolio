@@ -5,10 +5,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/static/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Bueno</title>
+    <title>Gustavo Bueno da Silva</title>
   </head>
   <body>
     <div class="particulas"></div>
@@ -24,7 +24,7 @@
     </nav>
     <main id="inicio" class="header">
       <img
-        src="Img/ft-perfil3.jpg"
+        src="/Img/ft-perfil3.jpg"
         alt="Gustavo Bueno da Silva"
         class="perfil"
       />
@@ -36,10 +36,10 @@
 
       <div class="caixa-paragrafo">
         <p class="paragrafo-sobre">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt,
-          aut officiis? Reiciendis itaque corporis tempore quidem doloremque
-          temporibus architecto porro natus quaerat. Numquam ratione id tenetur?
-          Reiciendis vitae fugit minus?
+          Sou o Gustavo, um estudante de Análise e Desenvolvimento de Sistemas
+          na FATEC de São José dos Campos. Tenho 18 anos e sou um entusiasta de cybersegurança.
+          Estou sempre em busca de aprender novas habilidades
+          e aprimorar meus conhecimentos.
         </p>
       </div>
     </section>
@@ -75,7 +75,7 @@
       <div class="caixa-projetos">
         <div class="item">
           <img
-            src="Img/Cripto-AES.png"
+            src="/Img/Cripto-AES.png"
             alt="Site para Criptografia"
             class="img-projetos"
           />
@@ -86,7 +86,7 @@
         </div>
         <div class="item">
           <img
-            src="Img/gerador-senha.png"
+            src="/Img/gerador-senha.png"
             alt="Gerador de Senhas"
             class="img-projetos"
           />
@@ -97,7 +97,7 @@
         </div>
         <div class="item">
           <img
-            src="Img/NinjaDevs API.png"
+            src="/Img/NinjaDevs API.png"
             alt="API-FATEC"
             class="img-projetos"
           />
@@ -132,7 +132,13 @@
         <button type="submit" class="botao-form">Enviar Mensagem</button>
       </form>
     </section>
-
+    <div class="botoes-extras">
+    <a href="curriculo.html" class="botao">📄 Ver Currículo</a>
+    <a href="certificacoes.html" class="botao">🏅 Ver Certificados</a>
+    </div>
+    <footer class="footer">
+      <p>Desenvolvido por Gustavo Bueno da Silva</p>
+      <p>2025</p>
     <script>
       function enviarWhatsapp(event) {
         event.preventDefault();
