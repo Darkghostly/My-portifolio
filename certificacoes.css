@@ -72,7 +72,7 @@ body {
 
 .titulo {
   font-size: 48px;
-  color: var(--primaria);
+  color: var(--claro);
   margin-bottom: 60px;
 }
 
@@ -101,6 +101,8 @@ body {
 }
 
 .img-cert {
+  display: block;
+  object-fit: cover;
   width: 100%;
   height: auto;
   border-radius: 8px;
